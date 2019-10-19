@@ -1,0 +1,8 @@
+https://www.programiz.com/cpp-programming/goto
+https://www.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html
+https://stackoverflow.com/questions/4774456/pass-an-array-to-a-function-by-value
+
+
+
+https://kobage.info/Articles/Teaching
+http://www.cplusplus.com/doc/tutorial/exceptions/

@@ -1,0 +1,38 @@
+In no specific order:
+
+Big projects:
+Numerical analysis library:
+-Solving linear systems (general)
+-Determinant, cramer's method
+-Row-Echelon form
+-Gauss method
+-Linear independence of vector sets, rank of a matrix
+-LU,LDU,LDLT factorisation
+-Matrix inversion (gauss method included)
+-Finding eigenvalues
+-Matrix diagonalisation
+-Quadratic froms
+
+-Polynomials
+-Root finding algorithms
+-Interpolation (linear,quadratic, etc.)
+-Integration/differentiation
+-Infinite sums
+-Ordinary/partial differential equations
+Make elementary data structures from scratch equivalent (as much as I can) to STL library (vector,list,set,unordered_set, etc.)
+
+1. How to turn a general recursive algorithm into an iterative one (stacks/queues)
+2. Order statistic tree (recursive and iterative algorithms)
+3. Prefix(trie)/suffix trees
+4. Dynamic programming and greedy algorithms (Fractional Knapsack problem)
+5. Languages and automata (for checking validity of a word, equivalence proofs)
+
+(Prove master's theorem for asymptotically solving recurrences)
+Correctness, complexity, recursive (if applies) and iterative:
+-Sorting algorithms (bubblesort,selection sort, insertion sort, quicksort, mergesort, heapsort, counting sort etc.)
+-Traversals and other tree algorithms: Preorder,inorder,postorder,level-order,reverse-level-order
+-Search/Select algorithms: Binary search, quickselect
+
+C++:
+-How to make a custom hash function for map/set
+-Parallel programming
