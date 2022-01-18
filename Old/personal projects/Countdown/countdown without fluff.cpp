@@ -493,7 +493,6 @@ bool calculate_one(vector<string> analyse, int to_get)//we scan make this faster
 	string combination;
 	possible_operations_one(analyse, combination, to_get, found);
 	return found;
-	cout << "\n\n\n";
 }
 
 void input_to_vector(const string& s, vector<string>& v)

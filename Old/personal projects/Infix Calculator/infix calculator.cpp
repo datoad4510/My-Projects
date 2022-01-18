@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stack>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -171,11 +172,13 @@ int calculate_infix(string infix)
 
 int main()
 {
-	string input;
-	int output;
-	cin >> input;
-	cout << endl;
-	output = calculate_infix(input);
-	cout << endl << output << endl;
-	system("pause");
+    while(true) {
+        cout << "Input an expression to calculate:\n\n";
+        string input;
+	    int output;
+	    cin >> input;
+	    output = calculate_infix(input);
+	    cout << "\n" << input << " == " << output << "\n\n";
+    }
+	
 }

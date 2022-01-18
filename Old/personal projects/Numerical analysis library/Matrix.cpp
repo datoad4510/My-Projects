@@ -947,30 +947,48 @@ Matrix<A>& Matrix<A>::operator=(const Matrix<A>& m)
 
 int main()  //maybe add gauss_inverse and det_inverse (using adjugate) and compare times?
 {
-	int counter = 1;
-	for (int i = 0; i < 5; i++)
-	{
-		for (int j = 0; j < 5; j++)
-		{
-			//A[i][j] = counter;
-			counter++;
-		}
-	}
-	Matrix<double> A(3, 2);//determninant works, gauss works, minor/adjugate work, rank/num_sol prolly work but need to be tested more(not completely sure about num_sol), inverse works  now (equality numerical errors fixed), adj_inverse works but is O(n^5)
+	Matrix<double> A(3, 2);
 	A[0][0] = 1;
 	A[0][1] = 1;
 	A[1][0] = 1;
 	A[1][1] = 2;
 	A[2][0] = 4;
 	A[2][1] = 6;
-	A.print(cout);
+	// A.print(cout);
 	Matrix<double> b(3, 1);
 	b[0][0] = 3;
 	b[1][0] = 7;
 	b[2][0] = 20;
+
+	cout << "x + y = 3" << "\n\n";
+	cout << "x + 2y = 7" << "\n\n";
+	cout << "4x + 6y = 20" << "\n\n";
 	Matrix<double> C = A.gauss_solve_generalised(b);
-	C.print(cout);
-	system("pause");
+
+	cout << "x = " << C[0][0] << "\n";
+	cout << "y = " << C[1][0] << "\n";
+
+	// C.print(cout);
+
+	Matrix<double> X(3, 3);
+
+	X[0][0] = 1;
+	X[0][1] = 2;
+	X[0][2] = 3;
+	X[1][0] = 40;
+	X[1][1] = 5;
+	X[1][2] = 6;
+	X[2][0] = 7;
+	X[2][1] = 8;
+	X[2][2] = 9;
+
+	cout << "\nWe have the following matrix X:\n\n";
+	X.print(cout);
+
+	cout << "determinant(X) == " << X.determinant() << endl;
+	cout << "\nInverse of X:\n\n";
+
+	X.gauss_inverse().print(cout);
 }
 
 double absolute(double x)
